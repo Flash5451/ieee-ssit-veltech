@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>IEEE SSIT · Vel Tech — Engineering the Future</title>
+  <meta name="description" content="The IEEE Society on Social Implications of Technology (SSIT) chapter at Vel Tech, Chennai. Ideas into innovation. Innovation into impact.">
+  <meta name="theme-color" content="#03050c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IEEE SSIT · Vel Tech — Engineering the Future">
+  <meta property="og:description" content="Ideas into innovation. Innovation into impact. The IEEE SSIT chapter at Vel Tech, Chennai.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ───────────── Boot sequence ───────────── -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__panel preloader__panel--top"></div>
+    <div class="preloader__panel preloader__panel--bottom"></div>
+    <div class="preloader__core">
+      <div class="preloader__brand"><span>IEEE SSIT</span><i></i><span>VEL TECH</span></div>
+      <div class="preloader__bar"><span></span></div>
+      <div class="preloader__meta">
+        <span class="preloader__status">Initialising systems</span>
+        <span class="preloader__count">000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ───────────── Ambient layers ───────────── -->
+  <canvas class="starfield" aria-hidden="true"></canvas>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ───────────── Warp transition ───────────── -->
+  <div class="warp" aria-hidden="true">
+    <div class="warp__tunnel"></div>
+    <div class="warp__flash"></div>
+    <div class="warp__label">
+      <span class="warp__num">01</span>
+      <span class="warp__title">Vel Tech</span>
+      <span class="warp__sub">Our Institution</span>
+    </div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor__ring"></span><span class="cursor__dot"></span></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ───────────── Navigation ───────────── -->
+  <header class="nav">
+    <a class="nav__brand" href="#top" data-warp aria-label="IEEE SSIT Vel Tech — back to top">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-opacity=".35"/>
+        <ellipse cx="20" cy="20" rx="17" ry="6.5" fill="none" stroke="url(#markGrad)" stroke-width="1.6" transform="rotate(-28 20 20)"/>
+        <circle cx="20" cy="20" r="4.2" fill="url(#markGrad)"/>
+        <circle cx="34.2" cy="12.6" r="2" fill="#46e3ff"/>
+        <defs><linearGradient id="markGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#46e3ff"/><stop offset="1" stop-color="#2f6bff"/></linearGradient></defs>
+      </svg>
+      <span class="nav__word"><b>IEEE SSIT</b><em>Vel Tech</em></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#veltech" data-warp>Institution</a>
+      <a href="#ieee" data-warp>IEEE</a>
+      <a href="#ssit" data-warp>SSIT</a>
+      <a href="#journey" data-warp>Journey</a>
+      <a href="#team" data-warp>Team</a>
+    </nav>
+
+    <a class="btn btn--glass nav__cta" href="#join" data-warp data-magnetic><span>Join Us</span></a>
+
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="nav__toggle-bars" aria-hidden="true"><i></i><i></i></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" aria-label="Menu" hidden>
+    <nav class="menu__links">
+      <a href="#veltech" data-warp><small>01</small>Institution</a>
+      <a href="#ieee" data-warp><small>02</small>IEEE</a>
+      <a href="#ssit" data-warp><small>03</small>SSIT</a>
+      <a href="#journey" data-warp><small>04</small>Journey</a>
+      <a href="#team" data-warp><small>05</small>Team</a>
+      <a href="#join" data-warp><small>→</small>Join Us</a>
+    </nav>
+    <p class="menu__foot">Science · Systems · Technology · Innovation</p>
+  </div>
+
+  <aside class="hud" aria-label="Chapters">
+    <a href="#veltech" data-warp data-hud="veltech"><span>01</span><em>Vel Tech</em></a>
+    <a href="#ieee" data-warp data-hud="ieee"><span>02</span><em>IEEE</em></a>
+    <a href="#ssit" data-warp data-hud="ssit"><span>03</span><em>SSIT</em></a>
+    <a href="#journey" data-warp data-hud="journey"><span>04</span><em>Journey</em></a>
+    <a href="#team" data-warp data-hud="team"><span>05</span><em>Team</em></a>
+  </aside>
+
+  <main id="main">
+
+    <!-- ═════════════ HERO ═════════════ -->
+    <section class="hero" id="top" data-atmo="hero" data-warp-num="00" data-warp-title="IEEE SSIT" data-warp-sub="Vel Tech">
+      <div class="hero__space" aria-hidden="true">
+        <div class="planet">
+          <div class="planet__body"></div>
+          <div class="planet__rim"></div>
+        </div>
+        <div class="hero__flare"><i></i></div>
+        <svg class="hero__orbits" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+          <ellipse cx="600" cy="300" rx="560" ry="150" class="orbit orbit--a"/>
+          <ellipse cx="600" cy="300" rx="430" ry="230" class="orbit orbit--b" transform="rotate(-14 600 300)"/>
+          <circle r="4" class="orbit__node"><animateMotion dur="26s" repeatCount="indefinite" path="M1160,300 a560,150 0 1,1 -1120,0 a560,150 0 1,1 1120,0"/></circle>
+        </svg>
+      </div>
+
+      <div class="hero__inner">
+        <h1 class="hero__title">
+          <span class="hero__lockup"><span>IEEE SSIT</span><i aria-hidden="true"></i><span>Vel Tech</span></span>
+          <span class="hero__headline">
+            <span class="hero__line">Engineering</span>
+            <span class="hero__line hero__line--accent">the future.</span>
+          </span>
+        </h1>
+        <p class="hero__sub"><span>Ideas into innovation.</span> <span>Innovation into impact.</span></p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#journey" data-warp data-magnetic><span>Explore our journey</span></a>
+          <a class="btn btn--ghost" href="#join" data-warp data-magnetic><span>Join the chapter</span></a>
+        </div>
+      </div>
+
+      <div class="hero__foot">
+        <span class="hero__meta">Avadi · Chennai · India</span>
+        <ul class="hero__pillars" aria-label="Our focus">
+          <li>Science</li><li>Systems</li><li>Technology</li><li>Innovation</li>
+        </ul>
+        <span class="hero__scroll" aria-hidden="true"><i></i>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═════════════ MANIFESTO ═════════════ -->
+    <section class="manifesto" data-atmo="hero" aria-label="Manifesto">
+      <div class="wrap">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>Why we exist</p>
+        <p class="manifesto__text" data-scrub-words>
+          Every circuit, every line of code, every system we build reaches into someone's life.
+          We are students of engineering who believe that makes technology a responsibility, not just a skill.
+          So we build with intent — to make the future smarter, and to make it fairer, safer and more human.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═════════════ 01 · VEL TECH ═════════════ -->
+    <section class="chapter chapter--veltech" id="veltech" data-atmo="veltech" data-warp-num="01" data-warp-title="Vel Tech" data-warp-sub="Our Institution" aria-labelledby="veltech-title">
+      <header class="chapter-intro">
+        <div class="chapter-intro__sticky">
+          <span class="chapter-intro__num" aria-hidden="true">01</span>
+          <div class="chapter-intro__content">
+            <p class="chapter-intro__kicker">Chapter 01</p>
+            <h2 class="chapter-intro__title" id="veltech-title" data-split="chars">Vel Tech</h2>
+            <p class="chapter-intro__sub">Our Institution</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="wrap chapter__body">
+        <div class="split">
+          <div class="split__text">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>01 — Our Institution</p>
+            <h3 class="statement" data-split="words">Research &amp; development is written into our name.</h3>
+            <p class="lead" data-reveal>
+              Vel Tech Rangarajan Dr. Sagunthala R&amp;D Institute of Science and Technology is a Deemed to be University
+              in Avadi, Chennai. Founded by Col. Prof. Vel. Dr. R. Rangarajan and Dr. Sagunthala Rangarajan, it brings
+              engineering, science and technology education together on one campus — with research and development at its core.
+            </p>
+            <a class="link-arrow" href="https://www.veltech.edu.in/" target="_blank" rel="noopener" data-reveal>Visit veltech.edu.in <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="split__visual" data-reveal="scale">
+            <div class="visual-frame">
+              <canvas class="campus" aria-hidden="true"></canvas>
+              <span class="visual-frame__tag">Campus · Avadi, Chennai</span>
+              <span class="visual-frame__corner visual-frame__corner--tl"></span>
+              <span class="visual-frame__corner visual-frame__corner--br"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards cards--4">
+          <article class="card" data-tilt data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="18" stroke-dasharray="3 5"/><path d="M24 2v8M24 38v8M2 24h8M38 24h8"/></svg>
+            </span>
+            <p class="card__num">01</p>
+            <h4 class="card__title">Vision</h4>
+            <p class="card__text">Education anchored in research and development — preparing graduates to create technology, not only to use it.</p>
+          </article>
+          <article class="card" data-tilt data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M6 18 24 9l18 9-18 9z"/><path d="M13 22v10c0 3 5 6 11 6s11-3 11-6V22"/><path d="M42 18v12"/></svg>
+            </span>
+            <p class="card__num">02</p>
+            <h4 class="card__title">Academic Environment</h4>
+            <p class="card__text">Undergraduate, postgraduate and doctoral programmes across engineering, science and technology, built around hands-on learning.</p>
+          </article>
+          <article class="card" data-tilt data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M19 6h10M21 6v13L9 40a3 3 0 0 0 2.6 4.5h24.8A3 3 0 0 0 39 40L27 19V6"/><path d="M14 32h20"/></svg>
+            </span>
+            <p class="card__num">03</p>
+            <h4 class="card__title">Research Culture</h4>
+            <p class="card__text">Laboratories, research centres and faculty-led projects that give students room to experiment, publish and prototype.</p>
+          </article>
+          <article class="card" data-tilt data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 4c-8 0-14 6-14 14 0 5 3 9 6 11v5h16v-5c3-2 6-6 6-11 0-8-6-14-14-14z"/><path d="M18 40h12M20 44h8M24 18v10M20 22l4-4 4 4"/></svg>
+            </span>
+            <p class="card__num">04</p>
+            <h4 class="card__title">Innovation</h4>
+            <p class="card__text">An environment that encourages students to turn projects into products — the ground this chapter grows from.</p>
+          </article>
+        </div>
+
+        <dl class="facts" data-reveal>
+          <div><dt>Status</dt><dd>Deemed to be University<small>Section 3, UGC Act 1956</small></dd></div>
+          <div><dt>Location</dt><dd>Avadi, Chennai<small>Tamil Nadu, India</small></dd></div>
+          <div><dt>Programmes</dt><dd>UG · PG · Doctoral<small>Engineering, science &amp; technology</small></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ═════════════ 02 · IEEE ═════════════ -->
+    <section class="chapter chapter--ieee" id="ieee" data-atmo="ieee" data-warp-num="02" data-warp-title="IEEE" data-warp-sub="The Global Community" aria-labelledby="ieee-title">
+      <header class="chapter-intro">
+        <div class="chapter-intro__sticky">
+          <span class="chapter-intro__num" aria-hidden="true">02</span>
+          <div class="chapter-intro__content">
+            <p class="chapter-intro__kicker">Chapter 02</p>
+            <h2 class="chapter-intro__title" id="ieee-title" data-split="chars">IEEE</h2>
+            <p class="chapter-intro__sub">The Global Community</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="wrap chapter__body">
+        <div class="split split--globe">
+          <div class="split__text">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>02 — The Global Community</p>
+            <h3 class="statement" data-split="words">Advancing technology for humanity.</h3>
+            <p class="lead" data-reveal>
+              IEEE is the world's largest technical professional organization dedicated to advancing technology for the
+              benefit of humanity. Its engineers, scientists, researchers, educators and students form a global community
+              that publishes research, develops standards and convenes the conferences that move whole industries forward.
+            </p>
+            <a class="link-arrow" href="https://www.ieee.org/" target="_blank" rel="noopener" data-reveal>Visit ieee.org <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="split__visual globe-wrap" data-reveal="scale">
+            <canvas class="globe" aria-hidden="true"></canvas>
+            <div class="globe__labels" aria-hidden="true">
+              <span class="globe__label" data-hub="chennai">Chennai<small>Vel Tech</small></span>
+              <span class="globe__label" data-hub="newyork">New York<small>IEEE HQ</small></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lineage" data-lineage>
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Lineage</p>
+          <ol class="lineage__track">
+            <li data-reveal><span class="lineage__year">1884</span><span class="lineage__text">The American Institute of Electrical Engineers (AIEE) is founded.</span></li>
+            <li data-reveal><span class="lineage__year">1912</span><span class="lineage__text">The Institute of Radio Engineers (IRE) is founded.</span></li>
+            <li data-reveal><span class="lineage__year">1963</span><span class="lineage__text">AIEE and IRE merge to form IEEE.</span></li>
+            <li data-reveal><span class="lineage__year">Today</span><span class="lineage__text">A worldwide community spanning every field of electrical, electronic and computing technology.</span></li>
+          </ol>
+        </div>
+
+        <div class="cards cards--4">
+          <article class="card" data-tilt data-reveal>
+            <p class="card__num">Standards</p>
+            <h4 class="card__title">The rules the world connects by</h4>
+            <p class="card__text">From IEEE 802.11 (Wi-Fi) to IEEE 802.3 (Ethernet), IEEE standards shape how the world's devices talk to each other.</p>
+          </article>
+          <article class="card" data-tilt data-reveal>
+            <p class="card__num">Publications</p>
+            <h4 class="card__title">Research that sets direction</h4>
+            <p class="card__text">IEEE journals, magazines and conference proceedings, gathered in the IEEE Xplore digital library.</p>
+          </article>
+          <article class="card" data-tilt data-reveal>
+            <p class="card__num">Conferences</p>
+            <h4 class="card__title">Where research meets practice</h4>
+            <p class="card__text">Conferences and events around the world where engineers, academics and industry share what comes next.</p>
+          </article>
+          <article class="card" data-tilt data-reveal>
+            <p class="card__num">Students</p>
+            <h4 class="card__title">A network from day one</h4>
+            <p class="card__text">Student branches on campuses worldwide give students a way into the IEEE community while they study.</p>
+          </article>
+        </div>
+
+        <div class="network" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Where we sit in the network</p>
+          <ol class="network__path">
+            <li><span class="network__node"></span><b>IEEE</b><small>Global</small></li>
+            <li><span class="network__node"></span><b>Region 10</b><small>Asia Pacific</small></li>
+            <li><span class="network__node"></span><b>Madras Section</b><small>Chennai</small></li>
+            <li><span class="network__node"></span><b>Student Branch</b><small>Vel Tech</small></li>
+            <li class="is-us"><span class="network__node"></span><b>SSIT Chapter</b><small>That's us</small></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════ 03 · SSIT ═════════════ -->
+    <section class="chapter chapter--ssit" id="ssit" data-atmo="ssit" data-warp-num="03" data-warp-title="IEEE SSIT" data-warp-sub="Our Chapter" aria-labelledby="ssit-title">
+      <header class="chapter-intro">
+        <div class="chapter-intro__sticky">
+          <span class="chapter-intro__num" aria-hidden="true">03</span>
+          <div class="chapter-intro__content">
+            <p class="chapter-intro__kicker">Chapter 03</p>
+            <h2 class="chapter-intro__title" id="ssit-title" data-split="chars">SSIT</h2>
+            <p class="chapter-intro__sub">Society on Social Implications of Technology</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="wrap chapter__body">
+        <div class="split split--ssit">
+          <div class="split__text">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>03 — Our Society</p>
+            <h3 class="statement statement--xl" data-split="words">Technology is never neutral.</h3>
+          </div>
+          <div class="split__aside">
+            <p class="lead" data-reveal>
+              The IEEE Society on Social Implications of Technology studies how technology affects people, communities
+              and the planet — and works to make sure engineering serves humanity. Its members explore ethics,
+              sustainability, equity and the human consequences of the systems we build.
+            </p>
+            <dl class="facts facts--stack" data-reveal>
+              <div><dt>1972</dt><dd>Began as IEEE's Committee on Social Implications of Technology</dd></div>
+              <div><dt>1982</dt><dd>Became a full IEEE Society</dd></div>
+              <div><dt>Publishes</dt><dd>IEEE Technology and Society Magazine · IEEE Transactions on Technology and Society</dd></div>
+              <div><dt>Convenes</dt><dd>ISTAS — the IEEE International Symposium on Technology and Society</dd></div>
+            </dl>
+            <a class="link-arrow" href="https://technologyandsociety.org/" target="_blank" rel="noopener" data-reveal>Visit technologyandsociety.org <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Five pillars: horizontal scroll on desktop, stacked on mobile -->
+      <div class="pillars" aria-labelledby="pillars-title">
+        <div class="pillars__viewport">
+          <div class="pillars__head wrap">
+            <div>
+              <p class="eyebrow"><span class="eyebrow__dot"></span>What SSIT stands for</p>
+              <h3 class="pillars__title" id="pillars-title">The five pillars</h3>
+            </div>
+            <div class="pillars__progress" aria-hidden="true"><span></span></div>
+          </div>
+          <div class="pillars__track">
+            <article class="pillar" style="--hue: 168">
+              <svg class="pillar__art" viewBox="0 0 200 200" aria-hidden="true">
+                <circle cx="100" cy="100" r="20"/><circle cx="100" cy="100" r="40"/><circle cx="100" cy="100" r="60"/><circle cx="100" cy="100" r="80"/>
+                <path d="M100 180V60c0-20 14-34 34-34M100 110c0-16-12-28-28-28"/>
+              </svg>
+              <span class="pillar__num">01</span>
+              <h4 class="pillar__title">Sustainable Development</h4>
+              <p class="pillar__text">Technology that meets today's needs without borrowing from tomorrow — clean energy, resilient infrastructure and responsible use of resources.</p>
+            </article>
+            <article class="pillar" style="--hue: 215">
+              <svg class="pillar__art" viewBox="0 0 200 200" aria-hidden="true">
+                <path d="M100 30v140M40 60h120M60 170h80"/>
+                <path d="M40 60 18 116h44zM160 60l-22 56h44z"/>
+                <circle cx="100" cy="30" r="8"/>
+              </svg>
+              <span class="pillar__num">02</span>
+              <h4 class="pillar__title">Ethics &amp; Human Values</h4>
+              <p class="pillar__text">Asking not only whether we can build something, but whether we should — and how to build it right.</p>
+            </article>
+            <article class="pillar" style="--hue: 195">
+              <svg class="pillar__art" viewBox="0 0 200 200" aria-hidden="true">
+                <circle cx="100" cy="100" r="12"/>
+                <path d="M100 88V30M100 112v58M88 100H30M112 100h58M91 91 50 50M109 109l41 41M109 91l41-41M91 109l-41 41"/>
+                <circle cx="100" cy="30" r="6"/><circle cx="100" cy="170" r="6"/><circle cx="30" cy="100" r="6"/><circle cx="170" cy="100" r="6"/>
+                <circle cx="50" cy="50" r="6"/><circle cx="150" cy="150" r="6"/><circle cx="150" cy="50" r="6"/><circle cx="50" cy="150" r="6"/>
+              </svg>
+              <span class="pillar__num">03</span>
+              <h4 class="pillar__title">Universal Access to Technology</h4>
+              <p class="pillar__text">Closing digital divides so that the benefits of technology reach everyone, everywhere.</p>
+            </article>
+            <article class="pillar" style="--hue: 255">
+              <svg class="pillar__art" viewBox="0 0 200 200" aria-hidden="true">
+                <circle cx="100" cy="100" r="10"/>
+                <circle cx="100" cy="100" r="34" stroke-dasharray="4 8"/>
+                <circle cx="100" cy="100" r="62" stroke-dasharray="2 10"/>
+                <circle cx="100" cy="100" r="88"/>
+                <circle cx="134" cy="100" r="5"/><circle cx="60" cy="52" r="5"/><circle cx="160" cy="146" r="5"/><circle cx="30" cy="140" r="5"/>
+              </svg>
+              <span class="pillar__num">04</span>
+              <h4 class="pillar__title">Societal Impacts</h4>
+              <p class="pillar__text">Understanding how systems reshape work, privacy, health and public life — before they ship, and after.</p>
+            </article>
+            <article class="pillar" style="--hue: 140">
+              <svg class="pillar__art" viewBox="0 0 200 200" aria-hidden="true">
+                <circle cx="100" cy="100" r="46"/>
+                <ellipse cx="100" cy="100" rx="86" ry="28" transform="rotate(-20 100 100)"/>
+                <path d="M62 84c14 6 22-4 36 2s20 18 36 12M58 112c12-4 26 8 42 2"/>
+              </svg>
+              <span class="pillar__num">05</span>
+              <h4 class="pillar__title">Protecting the Planet</h4>
+              <p class="pillar__text">Engineering in service of the environment — from climate technology to cutting electronic waste.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap chapter__body chapter__body--tight">
+        <div class="our-chapter">
+          <div class="our-chapter__head">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>The chapter at Vel Tech</p>
+            <h3 class="statement" data-split="words">Building technology with its consequences in mind.</h3>
+          </div>
+          <div class="cards cards--2x2">
+            <article class="card card--line" data-tilt data-reveal>
+              <p class="card__num">Mission</p>
+              <p class="card__text">To grow a student community at Vel Tech that designs technology with people, society and the planet in view — from the first sketch to the final build.</p>
+            </article>
+            <article class="card card--line" data-tilt data-reveal>
+              <p class="card__num">Student Community</p>
+              <p class="card__text">An open space for students across disciplines to learn, debate and build together, because responsible technology needs more than one perspective.</p>
+            </article>
+            <article class="card card--line" data-tilt data-reveal>
+              <p class="card__num">Leadership</p>
+              <p class="card__text">Student-led and faculty-guided. Members plan, run and learn from every event — leadership is something we practise, not just a title.</p>
+            </article>
+            <article class="card card--line" data-tilt data-reveal>
+              <p class="card__num">Responsible Innovation</p>
+              <p class="card__text">Every idea we take on meets the same questions: who does it serve, who could it harm, and how do we make it better for both?</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════ 04 · JOURNEY ═════════════ -->
+    <section class="chapter chapter--journey" id="journey" data-atmo="journey" data-warp-num="04" data-warp-title="Our Journey" data-warp-sub="Events &amp; Achievements" aria-labelledby="journey-title">
+      <header class="chapter-intro">
+        <div class="chapter-intro__sticky">
+          <span class="chapter-intro__num" aria-hidden="true">04</span>
+          <div class="chapter-intro__content">
+            <p class="chapter-intro__kicker">Chapter 04</p>
+            <h2 class="chapter-intro__title" id="journey-title" data-split="chars">Journey</h2>
+            <p class="chapter-intro__sub">Events &amp; Achievements</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="wrap chapter__body">
+        <div class="journey__head">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>04 — Events &amp; Achievements</p>
+          <h3 class="statement" data-split="words">Every chapter has a beginning.</h3>
+          <p class="lead" data-reveal>Hackathons, workshops, outreach and conversations — every event we've run is a chapter in our story, told here in the order it happened.</p>
+        </div>
+        <div class="timeline" id="journey-root"></div>
+      </div>
+    </section>
+
+    <!-- ═════════════ 05 · TEAM & JOIN ═════════════ -->
+    <section class="chapter chapter--team" id="team" data-atmo="team" data-warp-num="05" data-warp-title="Our Team" data-warp-sub="&amp; Join Us" aria-labelledby="team-title">
+      <header class="chapter-intro">
+        <div class="chapter-intro__sticky">
+          <span class="chapter-intro__num" aria-hidden="true">05</span>
+          <div class="chapter-intro__content">
+            <p class="chapter-intro__kicker">Chapter 05</p>
+            <h2 class="chapter-intro__title" id="team-title" data-split="chars">Team</h2>
+            <p class="chapter-intro__sub">&amp; Join Us</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="wrap chapter__body">
+        <div class="team__head">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>05 — Leadership</p>
+          <h3 class="statement" data-split="words">The people behind the chapter.</h3>
+        </div>
+        <div class="team" id="team-root"></div>
+      </div>
+
+      <div class="join" id="join" data-warp-num="→" data-warp-title="Join Us" data-warp-sub="Build technology that matters">
+        <div class="wrap">
+          <div class="join__hero">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>Membership</p>
+            <h3 class="join__title" data-split="words">Build technology <em>that matters.</em></h3>
+            <p class="lead" data-reveal>Membership connects you to IEEE's global network and to SSIT's community of people who care about what technology does to the world — and to a chapter at Vel Tech where you can act on it.</p>
+          </div>
+
+          <ol class="steps">
+            <li class="step" data-reveal>
+              <span class="step__num">01</span>
+              <h4 class="step__title">Become an IEEE Student Member</h4>
+              <p class="step__text">Sign up with IEEE as a student — this is your entry into the global community.</p>
+              <a class="link-arrow" href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noopener">Join IEEE <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="step" data-reveal>
+              <span class="step__num">02</span>
+              <h4 class="step__title">Add SSIT to your membership</h4>
+              <p class="step__text">Add the Society on Social Implications of Technology to your IEEE membership.</p>
+              <a class="link-arrow" href="https://technologyandsociety.org/" target="_blank" rel="noopener">About SSIT <span aria-hidden="true">↗</span></a>
+            </li>
+            <li class="step" data-reveal>
+              <span class="step__num">03</span>
+              <h4 class="step__title">Connect with our chapter</h4>
+              <p class="step__text">Reach out to the chapter at Vel Tech and join the next event, project or conversation.</p>
+              <a class="link-arrow" href="#contact" data-warp>Get in touch <span aria-hidden="true">↓</span></a>
+            </li>
+          </ol>
+
+          <div class="perks" data-reveal>
+            <div class="perk"><b>Global network</b><span>Engineers, researchers and students in IEEE communities worldwide.</span></div>
+            <div class="perk"><b>Knowledge</b><span>IEEE publications, standards and learning resources.</span></div>
+            <div class="perk"><b>Leadership</b><span>Plan and run real events as part of the chapter team.</span></div>
+            <div class="perk"><b>Purpose</b><span>Work on technology with its human impact in view.</span></div>
+          </div>
+
+          <div class="contact" id="contact" data-warp-num="→" data-warp-title="Contact" data-warp-sub="Let's talk">
+            <div class="contact__intro">
+              <p class="eyebrow"><span class="eyebrow__dot"></span>Contact</p>
+              <h3 class="statement" data-split="words">Let's build what comes next.</h3>
+              <p class="contact__place">IEEE SSIT Chapter<br>Vel Tech, Avadi<br>Chennai, Tamil Nadu, India</p>
+            </div>
+            <div class="contact__panel" id="contact-root" data-reveal></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═════════════ FOOTER ═════════════ -->
+  <footer class="footer">
+    <div class="footer__marquee" aria-hidden="true">
+      <div class="footer__marquee-track">
+        <span>Engineering the future</span><i>✦</i><span>Ideas into innovation</span><i>✦</i><span>Innovation into impact</span><i>✦</i>
+        <span>Engineering the future</span><i>✦</i><span>Ideas into innovation</span><i>✦</i><span>Innovation into impact</span><i>✦</i>
+      </div>
+    </div>
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <p class="footer__word">IEEE SSIT <span>Vel Tech</span></p>
+        <p class="footer__tag">Science · Systems · Technology · Innovation</p>
+      </div>
+      <nav class="footer__col" aria-label="Chapters">
+        <p>Chapters</p>
+        <a href="#veltech" data-warp>Vel Tech</a>
+        <a href="#ieee" data-warp>IEEE</a>
+        <a href="#ssit" data-warp>SSIT</a>
+        <a href="#journey" data-warp>Journey</a>
+        <a href="#team" data-warp>Team</a>
+      </nav>
+      <nav class="footer__col" aria-label="External">
+        <p>Elsewhere</p>
+        <a href="https://www.ieee.org/" target="_blank" rel="noopener">IEEE ↗</a>
+        <a href="https://technologyandsociety.org/" target="_blank" rel="noopener">IEEE SSIT ↗</a>
+        <a href="https://www.veltech.edu.in/" target="_blank" rel="noopener">Vel Tech ↗</a>
+      </nav>
+      <div class="footer__col">
+        <p>Back to</p>
+        <a href="#top" data-warp class="footer__top">Launch point ↑</a>
+      </div>
+    </div>
+    <div class="wrap footer__legal">
+      <span>© <span data-year></span> IEEE SSIT Chapter · Vel Tech</span>
+      <span>IEEE is a registered trademark of The Institute of Electrical and Electronics Engineers, Inc.</span>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Photo viewer">
+    <button class="lightbox__close" type="button" aria-label="Close">✕</button>
+    <img alt="">
+    <p class="lightbox__caption"></p>
+  </dialog>
+
+  <!-- Content -->
+  <script src="assets/js/data/site.js"></script>
+  <script src="assets/js/data/events.js"></script>
+  <script src="assets/js/data/team.js"></script>
+  <script src="assets/js/data/landmask.js"></script>
+  <!-- Motion engine -->
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <!-- Site -->
+  <script src="assets/js/starfield.js"></script>
+  <script src="assets/js/globe.js"></script>
+  <script src="assets/js/campus.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
