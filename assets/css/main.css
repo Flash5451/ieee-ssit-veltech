@@ -394,7 +394,7 @@ main { position: relative; z-index: 2; }
 
 /* ---------- Navigation ---------- */
 .nav {
-  position: fixed; top: 14px; left: 0; right: 0;
+  position: fixed; top: calc(14px + env(safe-area-inset-top, 0px)); left: 0; right: 0;
   z-index: 40;
   width: min(100% - 2 * var(--gutter), 1320px);
   margin-inline: auto;
